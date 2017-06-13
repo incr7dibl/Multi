@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Multi</string>
+    <string-array name="urls">
+    <item>https://s3.amazonaws.com/ngccoin-production/coin-grading-guide/Small-Size-Capped-Bust-Quarters-Reverse.jpg</item>
+        <item>https://static01.nyt.com/images/2012/10/31/dining/31STUFF_APPLES/31STUFF3-superJumbo.jpg</item>
+        <item>https://s-media-cache-ak0.pinimg.com/originals/2a/f7/2f/2af72f34c04fbf5354c4d637e98969a8.jpg</item>
+    </string-array>
+    <string-array name="imagename">
+    <item>Image 1</item>
+    <item>Image 2</item>
+    <item>Image 3</item>
+    </string-array>
+</resources>
