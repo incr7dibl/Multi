@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     String[] listofimages;
     LinearLayoutCompat loadingsection = null;
     ListView listView;
-
+//a
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
