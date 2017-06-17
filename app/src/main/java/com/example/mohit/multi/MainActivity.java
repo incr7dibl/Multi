@@ -88,6 +88,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         } catch (IOException e) {
 
         } finally {
+            this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    loadingsection.setVisibility(View.GONE);
+                }
+            });
             if (connection != null) {
                 connection.disconnect();
             }
@@ -121,6 +127,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         @Override
         public void run() {
             Log.d("thread","thread runnnig");
+            MainActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    loadingsection.setVisibility(View.VISIBLE);
+                }
+            });
             downloadImageUsingThreads(listofimages[0]);
         }
     }
